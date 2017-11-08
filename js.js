@@ -27,4 +27,4 @@ function debounce(func, wait = 10, immediate = true) {
 
 
 // Event Handler for Scroll
-  window.addEventListener('scroll', checkSlide);
+  window.addEventListener('scroll', debounce(checkSlide));
